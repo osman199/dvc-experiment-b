@@ -10,7 +10,7 @@ X_train = pd.read_csv(str(Config.FEATURES_PATH / "train_features.csv"))
 y_train = pd.read_csv(str(Config.FEATURES_PATH / "train_labels.csv"))
 
 model = RandomForestRegressor(
-    n_estimators=150, max_depth=6, random_state=Config.RANDOM_SEED
+    n_estimators=150, max_depth=6, random_state=28750
 )
 model = model.fit(X_train, y_train.to_numpy().ravel())
 
