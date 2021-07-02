@@ -44,12 +44,12 @@ train:
     md5: 403f8c21c89f04f71d82094250b49e1b
     size: 2005
   - path: src/train_model.py
-    md5: f1f15f8fda794ac4a41ec4886b66032f
-    size: 527
+    md5: 1b2edaef9d5b9b4d9da18b41fce7dfc8
+    size: 612
   outs:
   - path: model/model.pickle
-    md5: 90109ab9aa3acb2ac33671a2a66d10ac
-    size: 923182
+    md5: 8c29bda1cbd202b06e22ada1829f9303
+    size: 484
 evaluate:
   cmd: python src/evaluate.py
   deps:
@@ -60,12 +60,12 @@ evaluate:
     md5: 367111b2d9ad03994abfb88de0b09562
     size: 511
   - path: model/model.pickle
-    md5: 90109ab9aa3acb2ac33671a2a66d10ac
-    size: 923182
+    md5: 8c29bda1cbd202b06e22ada1829f9303
+    size: 484
   - path: src/evaluate.py
     md5: db244528b62829544897d05e92072f01
     size: 675
   outs:
   - path: metrics/metrics.json
-    md5: 0e570cf0440e4c1a70d8cfd91e0cd9d5
+    md5: 74470db160db20571ccdc1ae2ace997c
     size: 60
