@@ -28,12 +28,12 @@ stages:
     - model/model.pickle
     
   evaluate:
-    cmd: python src/evaluate.py
+    cmd: python src/evaluate_model.py
     deps:
     - data/features/test_features.csv
     - data/features/test_labels.csv
     - model/model.pickle
-    - src/evaluate.py
+    - src/evaluate_model.py
     metrics:
     - metrics/metrics.json:
         cache: false
