@@ -1,0 +1,9 @@
+prepare:
+  split: 0.20
+  seed: 20170428
+
+train:
+  n_estimators: 150
+  max_depth: 6
+  ccp_alpha: 0.1
+  seed: 20170428
