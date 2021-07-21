@@ -19,9 +19,9 @@ test_features = extract_features(test_df)
 train_features.to_csv(str(Config.FEATURES_PATH / "train_features.csv"), index=None)
 test_features.to_csv(str(Config.FEATURES_PATH / "test_features.csv"), index=None)
 
-train_df.MEDV.to_csv(
+train_df.Target.to_csv(
     str(Config.FEATURES_PATH / "train_labels.csv"), index=None
 )
-test_df.MEDV.to_csv(
+test_df.Target.to_csv(
     str(Config.FEATURES_PATH / "test_labels.csv"), index=None
 )
