@@ -15,7 +15,7 @@ params = yaml.safe_load(open('params.yaml'))['prepare']
 load_diabetes(str(Config.ORIGINAL_DATASET_FILE_PATH))
 data = load_diabetes()
 df = pd.DataFrame(data=data['data'], columns = data['feature_names'])
-df['MEDV'] = data.target
+df['Target'] = data.target
 
 df.to_csv(str(Config.ORIGINAL_DATASET_FILE_PATH / "diabetes.csv"), sep = ',', index = False)
 
